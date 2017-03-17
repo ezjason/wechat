@@ -1,0 +1,55 @@
+<!--优点：相比angular源码比较轻，所以它是轻量级，比angular性能更好点-->
+<!--缺点：没有angular功能齐全，angular封装了ajax($http)-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script>
+			window.onload = function() {
+				var vue = new Vue({
+					el: "#demo",
+					data: {
+						name: "this is name",
+						obj:{
+							name:"水浒传",
+							id:1,
+							year:20
+
+						},
+						arr:["黎明","刘德华","张学友","郭富城"],
+						que:"图灵机器人"
+					},
+					methods:{
+						test:function(){
+							console.log("test");
+						},
+												
+					},
+					ready : function() {
+						this.inputData();
+					}
+										
+				})
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="demo">
+			{{name}}
+			<p>{{obj.name}}</p>
+			<p>{{obj.id}}</p>
+			<p>{{obj.year}}</p>
+			<input v-model="name">
+			<input type="button" value="test" @click="test()">
+			<p v-for="arrs in arr">{{arrs+" 四大天王"}}</p>
+			<input type = "range" v-model="obj.year">
+			<input type="text" v-model="que">
+			<p>{{name}}</p>
+		</div>
+	</body>
+
+</html>
