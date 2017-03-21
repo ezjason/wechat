@@ -127,6 +127,7 @@ class wechatCallbackapiTest
 
 
 4，註冊一個微信公众号
+  
   1，选择开发 -》基本配置
       URL   http://1.jason53406.applinzi.com/wx_sample.php
       Token  weixin
