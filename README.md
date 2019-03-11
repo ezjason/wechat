@@ -2,7 +2,7 @@
 微信开发图灵机器人
 注册一个新浪云服务器
 「新浪云福利」1000云豆免费领！低成本，免运维，灵活，安全稳定，轻松应对业务爆发式增长，一起来用吧！
-注册地址：http://t.cn/RiszfOK
+[注册地址](http://t.cn/RiszfOK)
 
 1,在新浪云控制台云应用SAE中的应用管理的+创建应用
     选择PHP 
@@ -14,6 +14,7 @@
 2， 下载一个 TortoisesSVN  64位或32位的管理工具   安装
 3，创建一个PHP文件wx_sample0.php
   内容：
+  ````
         <?php
 /**
   * wechat php test
@@ -121,18 +122,22 @@ class wechatCallbackapiTest
 }
 
 ?>
-然后远程SVN checkout到你的新浪云地址https://svn.sinacloud.com/jason53406    
+`````
+然后远程SVN checkout到你的新浪云地址 `https://svn.sinacloud.com/jason53406 `   
 也就是在你创建的仓库那里的
-应用选项--》代码管理    -》SVN仓库地址
+
+   应用选项-->   代码管理    ->SVN仓库地址
 
 
 4，註冊一個微信公众号
   
-  1，选择开发 -》基本配置
+  1，选择开发 ->  基本配置
+  ```
       URL   http://1.jason53406.applinzi.com/wx_sample.php
       Token  weixin
       EncodingAESKey （可以自动生成）
       明文模式
+   ```
       
    2，开启服务配置
    
